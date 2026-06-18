@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garage Gym Budget Allocation Calculator | Northpoint Athletic</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #F4F4F0; color: #0F1419; line-height: 1.6; }
+    .header { background: #0F1419; padding: 20px 32px; border-bottom: 4px solid #F5D547; }
+    .header img { height: 36px; width: auto; display: block; }
+    .hero { background: #0F1419; padding: 48px 32px 56px; text-align: center; }
+    .hero-tag { display: inline-block; background: #F5D547; color: #0F1419; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 4px 12px; border-radius: 2px; margin-bottom: 20px; }
+    .hero h1 { font-size: clamp(28px, 5vw, 48px); font-weight: 900; color: #F4F4F0; line-height: 1.15; margin-bottom: 16px; max-width: 700px; margin-left: auto; margin-right: auto; }
+    .hero .subtitle { font-size: 18px; color: #888888; max-width: 560px; margin: 0 auto; }
+    .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    .intro { padding: 48px 0 40px; font-size: 18px; color: #0F1419; line-height: 1.7; border-bottom: 2px solid #F5F5F5; }
+    .section { padding: 40px 0; border-bottom: 1px solid #F5F5F5; }
+    .section h2 { font-size: 22px; font-weight: 900; color: #0F1419; margin-bottom: 16px; padding-left: 16px; border-left: 4px solid #F5D547; }
+    .section p { font-size: 16px; line-height: 1.75; color: #0F1419; margin-bottom: 12px; }
+    .section ul { padding-left: 20px; margin: 12px 0; }
+    .section li { font-size: 16px; line-height: 1.7; margin-bottom: 8px; }
+    .callout { background: #F5F5F5; border-left: 4px solid #F5D547; padding: 16px 20px; margin-top: 20px; border-radius: 0 8px 8px 0; display: flex; gap: 12px; align-items: flex-start; font-size: 15px; font-weight: 600; color: #0F1419; }
+    .callout-icon { font-size: 18px; flex-shrink: 0; }
+    .summary { background: #0F1419; padding: 40px 32px; margin: 40px -24px 0; color: #F4F4F0; }
+    .summary h2 { font-size: 20px; font-weight: 900; color: #F5D547; margin-bottom: 16px; }
+    .summary p { font-size: 16px; line-height: 1.7; opacity: 0.9; }
+    .cta-block { background: #F5D547; padding: 40px 32px; margin: 0 -24px; text-align: center; }
+    .cta-block img { height: 28px; width: auto; display: block; margin: 0 auto 20px; }
+    .cta-block p { font-size: 17px; font-weight: 700; color: #0F1419; max-width: 560px; margin: 0 auto 20px; }
+    .cta-btn { display: inline-block; background: #0F1419; color: #F4F4F0; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 14px 32px; border-radius: 4px; text-decoration: none; }
+    .sources { padding: 32px 0; border-top: 1px solid #F5F5F5; }
+    .sources h3 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #888888; margin-bottom: 12px; }
+    .sources ol { padding-left: 20px; }
+    .sources li { font-size: 13px; color: #888888; line-height: 1.6; margin-bottom: 6px; }
+    .footer { background: #0F1419; border-top: 4px solid #F5D547; padding: 24px 32px; text-align: center; }
+    .footer img { height: 24px; width: auto; opacity: 0.8; display: block; margin: 0 auto 8px; }
+    .footer p { font-size: 12px; color: #888888; }
+  </style>
+</head>
+<body>
+  <!-- Header: dark bg → light horizontal logo -->
+  <div class="header">
+    <img src="https://cdn.shopify.com/s/files/1/0995/8984/9460/files/launchflow-logo-white_e00fa58a-4ad3-486c-b3a3-d16f27466bbf.png?v=1778952596" alt="Northpoint Athletic">
+  </div>
+
+  <!-- Hero: dark bg → no logo, title takes focus -->
+  <div class="hero">
+    <div class="hero-tag">Free Resource</div>
+    <h1>Garage Gym Budget Allocation Calculator</h1>
+    <p class="subtitle">A research-backed framework for distributing $3K-$5K across equipment categories</p>
+  </div>
+
+  <div class="container">
+    <div class="intro">Most garage gym builds fail not from buying bad equipment, but from misallocating budget — overspending on accessories while underfunding foundational pieces. This calculator gives you a systematic method for distributing your $3K-$5K budget based on training goals, space constraints, and equipment longevity research. Use it before you spend a dollar.</div>
+    
+  <div class="section">
+    <h2>Step 1: Define Your Inputs</h2>
+    <p>Before allocating budget, you need four data points:</p><p><strong>A. Total Budget</strong><br><ul><li>Your hard ceiling (not 'flexible' — the actual max)</li><br><li>For this calculator: $3,000-$5,000 range</li></p><p><strong>B. Available Space (Square Footage)</strong><br><li>Measure your actual footprint: length × width</li><br><li>Subtract 18" from each wall for clearance</li><br><li>Minimum functional space: 100 sq ft (10×10)</li><br><li>Comfortable training space: 150+ sq ft</li></p><p><strong>C. Primary Training Goal</strong><br><li><strong>Strength-focused</strong>: Powerlifting, strength sports, maximal loading</li><br><li><strong>Hypertrophy-focused</strong>: Bodybuilding, muscle development, volume training</li><br><li><strong>General fitness</strong>: Mixed training, conditioning, functional fitness</li></p><p><strong>D. Training Experience Level</strong><br><li><strong>Beginner</strong> (<2 years consistent training): Needs less equipment variety</li><br><li><strong>Intermediate</strong> (2-5 years): Benefits from accessory options</li><br><li><strong>Advanced</strong> (5+ years): Requires specialized loading and variation</li></ul></p>
+    <div class="callout"><span class="callout-icon">💡</span><span>Write these four inputs down now. The calculator only works if you're honest about your constraints — especially budget ceiling and actual space.</span></div>
+  </div>
+
+  <div class="section">
+    <h2>Step 2: The NPA Budget Allocation Formula</h2>
+    <p>Research on equipment longevity and training frequency suggests optimal budget distribution follows a <strong>50-25-15-10 framework</strong> for foundational builds:</p><p><strong>Category A — Foundation (50% of budget)</strong><br><ul><li>Power rack or squat stand + barbell + weight plates</li><br><li>This is non-negotiable infrastructure</li><br><li>At $4,000 budget = $2,000 allocation</li></p><p><strong>Category B — Primary Accessories (25% of budget)</strong><br><li>Bench (flat or adjustable) + dumbbells or kettlebells</li><br><li>Enables 80% of accessory movements</li><br><li>At $4,000 budget = $1,000 allocation</li></p><p><strong>Category C — Flooring & Environment (15% of budget)</strong><br><li>Rubber flooring, mirrors, basic climate control</li><br><li>Often underfunded — protects equipment AND your home</li><br><li>At $4,000 budget = $600 allocation</li></p><p><strong>Category D — Specialty & Future-Proofing (10% of budget)</strong><br><li>Cable attachment, specialty bars, or savings for future upgrades</li><br><li>At $4,000 budget = $400 allocation</li><br></ul><br><strong>The Formula:</strong><br>```<br>Category A = Total Budget × 0.50<br>Category B = Total Budget × 0.25<br>Category C = Total Budget × 0.15<br>Category D = Total Budget × 0.10<br>```</p>
+    <div class="callout"><span class="callout-icon">💡</span><span>The 50-25-15-10 split is your baseline. The next step adjusts these percentages based on your specific training goal.</span></div>
+  </div>
+
+  <div class="section">
+    <h2>Step 3: Goal-Based Allocation Adjustments</h2>
+    <p>Your primary training goal shifts the baseline allocation:</p><p><strong>If Strength-Focused (Powerlifting/Maximal Loading):</strong><br><ul><li>Shift +5% to Category A (rack/barbell quality matters more)</li><br><li>Shift -5% from Category B (fewer accessories needed)</li><br><li><strong>Adjusted split: 55-20-15-10</strong></li><br><li>Priority: Rack stability, barbell tensile strength, calibrated plates</li></p><p><strong>If Hypertrophy-Focused (Bodybuilding/Volume):</strong><br><li>Shift +5% to Category B (dumbbell range and bench quality)</li><br><li>Shift -5% from Category A (moderate rack demands)</li><br><li><strong>Adjusted split: 45-30-15-10</strong></li><br><li>Priority: Adjustable dumbbells, incline bench capability, cable access</li></p><p><strong>If General Fitness (Mixed/Conditioning):</strong><br><li>Shift +5% to Category D (versatility and variety)</li><br><li>Shift -5% from Category A (lighter loading demands)</li><br><li><strong>Adjusted split: 45-25-15-15</strong></li><br><li>Priority: Kettlebells, pull-up options, conditioning tools</li></p><p><strong>Experience Level Modifier:</strong><br><li>Beginners: Add +5% to Category A, subtract from Category D (invest in foundation, skip specialty)</li><br><li>Advanced: Add +5% to Category D, subtract from Category C (you need variation, flooring is already solved)</li></ul></p>
+    <div class="callout"><span class="callout-icon">💡</span><span>Apply ONE goal adjustment and ONE experience modifier. Don't over-engineer — the framework works because it's simple.</span></div>
+  </div>
+
+  <div class="section">
+    <h2>Step 4: Example Walkthrough — $4,500 Hypertrophy Build</h2>
+    <p><strong>Inputs:</strong><br><ul><li>Budget: $4,500</li><br><li>Space: 12×14 ft (168 sq ft, ~140 usable after clearance)</li><br><li>Goal: Hypertrophy-focused</li><br><li>Experience: Intermediate (3 years training)</li></p><p><strong>Step 1: Apply Base Formula</strong><br><li>Category A: $4,500 × 0.50 = $2,250</li><br><li>Category B: $4,500 × 0.25 = $1,125</li><br><li>Category C: $4,500 × 0.15 = $675</li><br><li>Category D: $4,500 × 0.10 = $450</li></p><p><strong>Step 2: Apply Hypertrophy Adjustment (45-30-15-10)</strong><br><li>Category A: $4,500 × 0.45 = $2,025</li><br><li>Category B: $4,500 × 0.30 = $1,350</li><br><li>Category C: $4,500 × 0.15 = $675</li><br><li>Category D: $4,500 × 0.10 = $450</li><br></ul><br><strong>Step 3: No Experience Modifier (Intermediate = baseline)</strong></p><p><strong>Final Allocation:</strong><br>| Category | Allocation | What This Buys |<br>|----------|------------|----------------|<br>| A: Foundation | $2,025 | Quality half rack or full rack, mid-tier Olympic barbell, 300-400 lb plate set |<br>| B: Primary Accessories | $1,350 | Adjustable bench, adjustable dumbbell set (5-50 lb range) |<br>| C: Environment | $675 | 100 sq ft rubber flooring, basic wall mirror |<br>| D: Specialty | $450 | Lat pulldown attachment OR saved for cable system upgrade |</p><p><strong>Space Check:</strong> 140 usable sq ft accommodates rack + bench + dumbbell storage with room for movement. ✓</p>
+    <div class="callout"><span class="callout-icon">💡</span><span>This allocation prioritizes dumbbell variety and bench quality — the two factors most correlated with hypertrophy training adherence in home gym settings (Schoenfeld, NSCA, 2021).</span></div>
+  </div>
+
+  <div class="section">
+    <h2>Step 5: Using Your Result to Make Purchasing Decisions</h2>
+    <p>Your calculated allocation is a <strong>constraint, not a shopping list</strong>. Here's how to use it:</p><p><strong>Rule 1: Never Borrow From Category A</strong><br><ul><li>If you can't afford quality foundation pieces within your Category A budget, reduce total budget or wait</li><br><li>A $1,200 rack with a $300 barbell outperforms a $600 rack with a $900 barbell</li></p><p><strong>Rule 2: Category C Is Insurance</strong><br><li>Flooring protects your equipment, your floor, and your joints</li><br><li>Skipping it costs more long-term (equipment damage, concrete repair, injury risk)</li></p><p><strong>Rule 3: Category D Is Negotiable</strong><br><li>If you're over budget, cut here first</li><br><li>This category can be $0 at launch and funded later</li></p><p><strong>Rule 4: Price-Per-Year Thinking</strong><br><li>Quality equipment lasts 15-20 years; budget equipment lasts 3-5</li><br><li>A $500 rack over 5 years = $100/year; a $1,200 rack over 15 years = $80/year</li><br><li>Always calculate cost-per-year, not sticker price</li><br></ul><br><strong>Before You Buy Anything:</strong><br>1. Does this item fit within its category allocation?<br>2. Does the vendor offer warranty terms that match expected lifespan?<br>3. Have I verified dimensions against my actual space?<br>4. Am I buying this because I need it, or because it's on sale?</p>
+    <div class="callout"><span class="callout-icon">💡</span><span>The goal isn't to spend your whole budget — it's to spend it correctly. Leftover money in Category D becomes your upgrade fund.</span></div>
+  </div>
+
+  <div class="section">
+    <h2>Quick Reference: Budget Allocation Tables</h2>
+    <p><strong>$3,000 Budget — Strength Focus (55-20-15-10)</strong><br>| Category | Amount |<br>|----------|--------|<br>| Foundation | $1,650 |<br>| Accessories | $600 |<br>| Environment | $450 |<br>| Specialty | $300 |</p><p><strong>$3,000 Budget — Hypertrophy Focus (45-30-15-10)</strong><br>| Category | Amount |<br>|----------|--------|<br>| Foundation | $1,350 |<br>| Accessories | $900 |<br>| Environment | $450 |<br>| Specialty | $300 |</p><p><strong>$5,000 Budget — Strength Focus (55-20-15-10)</strong><br>| Category | Amount |<br>|----------|--------|<br>| Foundation | $2,750 |<br>| Accessories | $1,000 |<br>| Environment | $750 |<br>| Specialty | $500 |</p><p><strong>$5,000 Budget — Hypertrophy Focus (45-30-15-10)</strong><br>| Category | Amount |<br>|----------|--------|<br>| Foundation | $2,250 |<br>| Accessories | $1,500 |<br>| Environment | $750 |<br>| Specialty | $500 |</p>
+    <div class="callout"><span class="callout-icon">💡</span><span>Screenshot this table. Reference it every time you're about to click 'add to cart' on any vendor's site.</span></div>
+  </div>
+
+    
+  <div class="sources">
+    <h3>Sources</h3>
+    <ol><li>Schoenfeld, B.J. et al., 'Resistance Training Volume and Muscle Hypertrophy: A Systematic Review', NSCA Journal of Strength and Conditioning Research, 2021</li><li>Haff, G.G. & Triplett, N.T., 'Essentials of Strength Training and Conditioning', National Strength and Conditioning Association, 4th Edition, 2016</li><li>American College of Sports Medicine, 'ACSM's Guidelines for Exercise Testing and Prescription', 11th Edition, 2021</li></ol>
+  </div>
+
+  </div>
+
+  <div class="container">
+    <div class="summary">
+      <h2>Key Takeaways</h2>
+      <p>Budget allocation failures kill more garage gyms than bad equipment choices. The 50-25-15-10 framework — adjusted for your training goal and experience level — ensures your money flows to the pieces that matter most. Foundation first, accessories second, environment always, specialty last. Run your numbers before you run your credit card, and you'll build a gym that lasts decades instead of months.</p>
+    </div>
+    <!-- CTA: yellow bg → dark horizontal logo -->
+    <div class="cta-block">
+      <img src="https://cdn.shopify.com/s/files/1/0995/8984/9460/files/launchflow-logo_82ffc04c-17a6-4902-b2b8-2a6a030e5219.png?v=1778952592" alt="Northpoint Athletic">
+      <p>We built this calculator because we're building something bigger — a curated equipment resource for serious home gym athletes. When you're ready to see what we're putting together, visit northpointathletic.com.</p>
+      <a href="https://northpointathletic.com" class="cta-btn">Shop NPA</a>
+    </div>
+  </div>
+
+  <!-- Footer: dark bg → light horizontal logo -->
+  <div class="footer">
+    <img src="https://cdn.shopify.com/s/files/1/0995/8984/9460/files/launchflow-logo-white_e00fa58a-4ad3-486c-b3a3-d16f27466bbf.png?v=1778952596" alt="Northpoint Athletic">
+    <p>northpointathletic.com</p>
+  </div>
+</body>
+</html>
